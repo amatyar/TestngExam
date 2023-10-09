@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="username" value="performance_glitch_user"></parameter>
+<parameter name="password" value="secret_sauce"></parameter>
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name="testngexam1008.exam6">
+  <methods>
+      <exclude name="TestCase_two"></exclude>
+      <exclude name="TestCase_four"></exclude>
+      </methods>
+  </class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
